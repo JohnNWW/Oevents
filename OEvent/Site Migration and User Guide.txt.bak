@@ -1,0 +1,101 @@
+------
+end of DEC/JAN Updates
+
+Error page add
+Clean permalinks
+Run Search and Replace
+
+---------------------------------------
+
+
+List of Plugin to deactivate before backup and migration of database
+
+Custom Contact Forms
+Demo Data Creator
+Events Manager
+Executable PHP widget
+GRAND Flash Album Gallery
+Hackadelic WidgetVoodoo
+Registration Form Widget
+Shadowbox JS
+Shadowbox JS - Use Title from Image
+ShareThis
+Smooth Slider
+WordPress Importer
+-----------------------------------------
+Reactivate after migration
+----------------------------------------------------
+Widgets needing editing
+--------------------------------------------------------
+add changes to login widget
+
+to fix widget voodoo sidebar widget collapse - settings>voodoo 
+1 change title selector to .widget-title
+2.change Auto-collapsed Widgets Selector  = Auto-collapsed Widgets Selector
+
+-------------------------------------------------------------------------------------
+when posting a picture, use this instead of http://expample.com/**
+
+wp-content/uploads/**
+example: wp-content/uploads/2011/12/640_westcoastportblockade_wallstreet.jpg
+-------------------------------------------------------------------------------------
+login wiget is missin
+------------------------------------------------
+
+check demo1 post for pic.. Reinsert
+---------------------------------------------------
+Change dashboard>settings>privicy to allow search engines
+
+---------------------------------------------------
+Search and replace http://ph1landrews.com/occupy/dev/wp/ with new user domain path in style.css, and widget code.
+
+--------------------------------------------------
+
+Check SHARE THIS PLUGIN SETTINGS FOR PUBLISHER KEY??? IS SHARE THIS
+GOING TO THE RIGHT PLACE FOR THE NEW SITE OWNERS  -- NEEDS WORK TO CHECK
+
+---------------------------------
+use wp-admin login
+-----------------------------------
+change links in the config file with the bottom two lines. Add these two lines at bottom of config.php file. Change "www.example.com to your domain name
+
+define('WP_SITEURL', 'http://www.example.com');
+define('WP_HOME', 'http://www.example.com');
+
+If you want to change from .com to .org, you need to go into config.php and change Url's at bottom of page
+-----------------------------------------------------
+
+USER Reminders
+
+Backup Site - Then Update Plugins and WP
+------------------------------------------------------
+email addresses are available using your domain name ie; "user@mydomain.org"
+
+-------------------------------------------------------
+
+If you use a long title for a post, page, event etc.. 
+remember to enter a short slug title (best - 3 ot 4 words max) on the edit page-> this will
+be the url that your browsers and search engines use.
+
+
+
+
+
+------------------------------------------------------
+If you want to change the color of your site name at the top of the page change the following code: in style.css
+#site-title a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: white;  // CHANGE TO blue, green, lightgreen .... etc or use colorpicker and #000000
+    font-size: 46px;
+    font-weight: bold;
+	text-align: center;
+    line-height: 48px;	
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+}
+--------------------------------------------------------------------------------------------------------------
+	Run Search and Replace to fix links on pages. ie: Events on sidebar may point back to basic1 page.
+-----------------------------------------------------------------------------------------------------------
+

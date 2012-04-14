@@ -1,0 +1,1410 @@
+
+/*
+Theme Name: Occupation Events
+Version: 1.0
+Author: NWwaterboy
+Author URI: http://occupynw.org
+Description: A theme for the 99%          ---    Requires the Twenty Eleven Theme Installed -- The Occupation theme for WordPress is sophisticated, lightweight, and adaptable. The theme has Event Management and Custom Forms with a Main Contact form built in. The Occupation theme comes included with additional plugins, providing you with the option of having sidebars on post and/or pages, ability to up load custom banner images, a preformed contact form and the ability to make more custom forms, database backup, Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+- - - Porting this theme you need to include plugins and .../images for custom banner images
+
+License: GNU General Public License
+Template: twentyeleven
+Tags: revolution, democracy, movement, occupy, everett, dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background,
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+@import url(../twentyeleven/style.css); 
+/* @import url( style-background.css); */
+
+body {   
+background-color: #000;  /* change color background of site to darkblue for yellow image #070350 */
+/* Delete background-image line to Remove gold background image  for yellow image change to replace red with yel url("http://wptrain.werelax.com/wp/wp-content/uploads/2012/03/bg-paper-gld-sq2.png")*/
+background-image: url('http://wptrain.werelax.com/wp/wp-content/uploads/2012/03/bg-paper-drkgreen-sq.png'); /* Delete this line to Remove gold background image */
+background-repeat: tile;
+background-attachment: scroll;
+	line-height: 1.2;
+	font-family: “Trebuchet MS”, Verdana, Tahoma, Geneva, “Lucida Sans Unicode”, “Lucida Grande”, Arial, Helvetica, “MS Sans Serif”, sans-serif; /*NWW edit none */
+	font-size: 14px; /*NWW edit none */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+	font-family: Droid Sans, sans-serif; /*NWW edit none */ 
+}
+
+h1 	{
+	font-size: 42px;
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+	font-weight: normal;
+	text-align: center;
+	
+	}
+h2 	{
+	font-size: 22px;
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+	font-weight: bold;
+	
+	}
+	
+h3 	{
+	font-size: 18px;
+	font-weight: bold;
+	font-face: italic;
+	
+	}
+	
+h4 {
+	font-size: 12px;
+}
+h5 {
+	font-size: 10px;
+}
+h6 {
+	font-size: 10px;
+}
+
+#site-title {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	text-align: center;
+    margin-right: 270px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 20px; /* 3.65625em; */
+	width: 350px; /* change this to change the box size for larger or small site name */
+	border-radius: 15px;
+box-shadow: 6px 6px 3px #888;
+	background-color: gray;   /* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(245, 245, 245) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(245, 245, 245,.5);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	}
+
+
+	
+#site-title a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: white; /* Change this color for Title text */
+    font-size: 46px; /* NWW changed in 20-11 */ 
+    font-weight: bold;
+	text-align: center;
+    line-height: 48px;	/* NWW changed in 20-11 */
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+}
+	
+
+input #s {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("images/search.png");
+    background-origin: padding-box;
+    background-position: 5px 6px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border-bottom-color: white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-width: 2px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: white;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 2px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: white;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 2px;
+    border-top-color: white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top-width: 2px;
+    color: white;
+    font-size: 16px;
+    height: 22px;
+    line-height: 1.2em;
+    padding-bottom: 4px;
+    padding-left: 28px;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+
+#site-description {  /* NNW add display: none */
+    color: green;
+    font-size: 14px;
+    margin-bottom: 0; /* 3.65625em */
+    margin-left: 0;
+    margin-right: 270px;
+    margin-top: 0;
+	display:none;
+}
+
+#page {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: lightgrey;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+   /* background-color: #FFFFFF; */
+    background-image: url('http://wptrain.werelax.com/wp/wp-content/themes/OEvent/images/bg-paper-gld-sq-lit-80.png');
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: lightgray;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 4px;
+	border-right-color: lightgrey;
+    border-right-style: solid;
+    border-right-width: 4px;
+	box-shadow: 2px 2px 3px 2px #888;
+}
+
+ 
+
+
+
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	height: auto;
+	margin-bottom: 0;
+	width: 100%;
+	border-top: 2px solid #bbb;
+	padding-bottom: 10px;
+z-index: 2;
+
+	
+}
+	
+#branding img {
+height: auto;
+margin-bottom: 0;
+width: 100%;
+}
+
+#branding #searchform {
+position: absolute;
+top: .8em;
+right: .6%;
+text-align: right;
+
+}
+
+#branding #s {
+    -moz-transition-duration: 400ms;
+    -moz-transition-property: width, background;
+    -moz-transition-timing-function: ease;
+    border-bottom-width: 4px;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 4px;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 4px;
+    border-top-width: 4px;
+	color: #00FFFF !important;  /* does not show in chrome */
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    width: 72px;	
+	border-color: cyan;
+}
+
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	margin-bottom: 0px;
+/*	margin-top: -3px;  just for occupation theme not header/slider  --moz-linear-gradient(#191970, #00008B)   */
+	background-image: -moz-linear-gradient(#030032, #000551) !important;
+	background: -webkit-linear-gradient(#010242, midnightblue);
+	background-color: #000551;
+}
+
+
+#access a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+
+    color: #EEEEEE;
+    display: block;
+    font-size: 16px;  /*increased size NWW */
+    line-height: 3.333em;
+    padding-bottom: 0;
+    padding-left: 1.2125em;
+    padding-right: 1.2125em;
+    padding-top: 0;
+}
+
+
+
+/* =Structure Layout
+-------------------------------------------------------------- */
+
+
+#main {
+    clear: both;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+	padding-top: 0;
+	background-color:fffff9;
+	}
+
+#primary-header {
+    float: left;
+	padding-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: -26.4%;
+    margin-top: 0;
+    width: 100%;
+    z-index: 0;
+	
+}
+	
+#primary { /* need background color to finish */
+    
+    float: left;
+	padding-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: -26.4%;
+    margin-top: 0;
+    width: 100%;
+    z-index: 0;
+	background-color: white;
+	    background-image: url('http://wptrain.werelax.com/wp/wp-content/themes/OEvent/images/bg-paper-gld-sq-lit-80.png');
+
+	}
+
+	
+	#above-content { 
+	margin-top: 40px;
+	clear: both;
+	}
+ #secondary {
+    background-color: #FFFFF9;
+    float: right;
+    margin-right: 1%;
+    padding-left: 10px;
+    width: 24.2%;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px 2px #888; 
+	overflow-x: hidden;
+    overflow-y: hidden;
+	margin-bottom: 40px;
+	
+}
+ 
+ #secondary.widget-area {
+    margin-top: 40px;
+	
+}
+
+#footer-main {
+display: block;
+position: relative;
+}
+
+
+#colophon {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 21px 0 #888888;
+    clear: both;
+}
+#site-generator {
+    background-color: #010242;
+   
+}
+#site-generator a {
+    color: lightBlue;
+    font-weight: bold;
+}
+
+/* =Content
+----------------------------------------------- */
+#content-main {
+clear: both;
+
+}
+#content {
+    margin-bottom: 20px;
+    margin-left: 3.6%;
+    margin-right: 34%;
+    margin-top: 0px;
+    width: 64%;
+	padding-left: 20px;
+	padding-right: 10px;
+	box-shadow: 2px 2px 2px 2px #888;
+	border-right-style: solid; 
+	border-right-color: gray; 
+	border-right-width: 2px; 
+	background-color: #F9FFFF;
+   clear: both;
+   position: relative; /* absolute - overlaping at bottom */
+   }
+   
+#content-home {
+    margin-bottom: 20px;
+    margin-left: 3.6%;
+    margin-right: 34%;
+    margin-top: 0px;
+    width: 90%;
+	padding-left: 20px;
+	padding-right: 10px;
+	
+   clear: both;
+   position: relative; /* absolute - overlaping at bottom */
+}
+
+.hentry:last-child, .no-results {  /* hide title of Event Articles page ID 691*/
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    display: none;
+}
+
+
+.entry-title {
+    clear: both;
+    line-height: 1.5em;
+    padding-bottom: 0.3em;
+    padding-top: 15px;
+	font-size: 28px;
+}
+.entry-title, .entry-title a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: #222222;
+}
+
+.entry-content h2, .comment-content h2 {
+    font-size: 18px ;   /* !important */
+	font-weight:bold;
+    letter-spacing: 0.1em;
+    line-height: 2.6em;
+    text-transform: uppercase;
+
+}
+
+.entry-content h3, .comment-content h3 {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 2.6em;
+    text-transform: uppercase;
+}
+
+.entry-content, .entry-summary {
+    border-bottom-color: -moz-use-text-color;
+    border-bottom-style: none;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: -moz-use-text-color;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: medium;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0; /*changed from 1.625 em for twitterpage entrycontent */
+}
+
+
+/* =Next previous Page links
+----------------------------------------------- */
+#page-links {
+margin: 20px;
+padding: 20px;
+display: block;
+}
+
+#previous-link {
+float: left;
+display: block;
+}
+
+#next-link {
+float: right;
+display: block;
+}
+
+/* =Sticky
+----------------------------------------------- */
+
+.sticky {
+background: #A2D9FD
+border: 3px solid black;
+padding: 10px;
+}
+/* =Aside
+----------------------------------------------- */
+
+/* =Link
+----------------------------------------------- */
+
+/* =Gallery
+----------------------------------------------- */
+
+
+
+/* =Status
+----------------------------------------------- */
+
+
+/* =Quote
+----------------------------------------------- */
+
+
+/* =Image
+----------------------------------------------- */
+
+
+
+/* Intro */
+/* Featured post */
+
+/* Small featured post */
+
+
+/* Large featured post */
+
+
+/* Featured Slider */
+
+/* = Anything Slider 
+----------------------------------------------- */
+
+/* =Header Slider
+-------------------------------------------------------------- */
+
+
+
+.main-slider-header {  /*only in slider occupation theme */
+ display: block;
+height: 300px;
+width: 100%;
+padding-top: 0px;
+padding-right: 0;
+padding-bottom: 0;
+padding-left: 0;
+margin-left: 0;
+border: none;
+border-width: 0px;
+
+}
+
+img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img {  /*only in slider occupation theme */
+border: none;
+padding: 0px;
+border-image: initial;
+
+
+}
+
+img.size-full, img.size-large { /*only in slider occupation theme */
+max-width: 100%;
+width: auto;
+height: auto;
+border: 0px;
+padding: 0px;
+}
+
+
+.main-slider {
+display: block;
+height: 300px;
+width: 95%;
+padding-top: 40px;
+padding-right: 0;
+padding-bottom: 0px;
+padding-left: 0;
+margin-left: 0;
+border: none;
+border-width: 0px;
+
+}
+
+div.anythingSlider-cs-portfolio  {
+/*   background-color: black; --  this was the problem with the name not showing up*/
+	z-index: 0 !important;  /*  with 0 set and site title at 1 site title continuous display  */
+	padding: 0 !important;
+}
+
+div.anythingSlider-cs-portfolio .anythingControls { /* does odd stuff -- this blanks out the control space  */
+	display:none; 
+  background-attachment: scroll;
+    background-clip: border-box; 
+	z-index: -900 !important;
+     background-color: white; /* get rid of controls
+ background-image: url("/images/cs-portfolio.png") !important; 
+   background-origin: padding-box;
+/*    background-position: center bottom; 
+    background-repeat: repeat-x;
+    background-size: auto auto;*/
+    height: 0px !important;
+ /* margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 150px;
+    text-align: center; 
+ z-index: 100;*/
+	position: fixed;
+	top: 0;
+
+}
+
+
+
+
+
+
+.singular #content, .left-sidebar.singular #content {
+    margin-bottom: 10px;
+    margin-left: 7.6%;
+    margin-right: 7.6%;
+    margin-top: 20px;
+    width: 80%;
+	box-shadow: 0 0 0 0 ;
+	border: none
+}
+
+
+/* =Attachments
+----------------------------------------------- */
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+
+/* =Widgets
+----------------------------------------------- */
+#widget-area {
+font-size: 12px;
+margin-bottom: 40px;
+}
+ 
+ 
+ /* not working trying to isolate the footer widget titles 
+#supplementary .three widget-title { 
+background-color: green;
+	}
+*/
+
+.widget ul {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+
+.page-template-showcase-php #main .widget-area {
+	float: left;
+	margin: 0 -22.15% 0 0;
+	width: 22.15%;
+}
+#nice_navigation-3 .widget .widget_nice_navigation collapsible  .widget-title collapsible collapsed  {
+	background-color: green;
+}
+
+
+#supplementary.two  .widget-title  {
+	color: blue;
+	font-weight: bold;
+	width: 180px;
+	border: 0px solid grey;
+	background-color: #EDF3FF;
+	border-radius: 10px;
+
+	box-shadow: none;	
+	
+}
+
+#supplementary.two  .widget-title:hover {
+color: red;
+background-color: skyblue;
+}
+
+#supplementary.two  .widget-title .widget-area {
+
+	border: none;
+	background: transparent;
+
+
+}
+
+#supplementary.three  .widget-title  {
+	color: blue;
+	font-weight: bold;
+	width: 180px;
+	border: 0px solid grey;
+	background-color: #EDF3FF;
+	border-radius: 10px;
+
+	box-shadow: none;	
+	
+}
+
+#supplementary.three  .widget-title:hover {
+color: red;
+background-color: skyblue;
+}
+
+#supplementary.three  .widget-title .widget-area {
+
+	border: none;
+	background: transparent;
+
+
+}
+
+
+	
+.widget-title {
+	background-color: #E0FFFF;   /* Fallback for web browsers that doesn't support RGBa */
+	background-size: 98%;
+	background: rgb(224, 255, 255) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(224, 255, 255,.5);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	-moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+     -moz-text-decoration-style: solid;
+  /*  background-color: ; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    color: blue;
+    font-size: 14px;
+    line-height: 2.6em;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+
+h3.widget-title:hover {
+	color: red;/*NWW edit */
+	background-color: #AFEEEE;
+}
+widget.collapsible h3.widget-title {
+	text-align: center;
+	height: 24px;
+	-moz-border-radius: .6em; -webkit-border-radius: .6em;
+	cursor: pointer;
+}
+
+/* ------------------- ABOVE WIDGET CONTENT --------------------------------------------- */
+
+
+
+
+.above-content-title-h3   { /* ---- all title text -- */
+color: green;
+padding: 10px 10px 10px 20px;
+margin: -50px	0px	0px	0px;
+font-size: 20px;
+}
+
+
+.above-content-1 { /* - background -*/
+width: 31%;
+float: left;
+padding: 0px 0px 0px 0px;
+margin: 20px 0px 0px 0px;
+height: 255px; /* 225px */
+border: solid;
+border-width: 0px;
+background-color:#E6EAF4; /* fallback 
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');*/
+box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 15px;
+position: relative;
+overflow: hidden;
+
+}
+
+.above-content-1-heading  { /* -- title background --*/
+background-color: #B3C6F2;
+padding: 10px 10px 10px 20px;
+margin: 0px	0px	10px 0px;
+height: 30px;
+border: 2px solid #A5BCEF;
+border-radius: 15px 15px 0px 0px;
+}
+
+.above-content-1 .widget { /* -- title background -- */
+/*  background-color: #D89F45;*/
+padding: 0px 0px 5px 0px;
+margin: 0px	0px	0px 0px;
+
+}
+
+
+.above-content-2 { /* - background -*/
+width: 31%;
+float: left;
+padding: 0px 0px 0px 0px;
+margin: 20px 30px 0px 30px; /*sets spacing between boxes */
+height: 255px;
+border: solid;
+border-width: 0px;
+background-color: #D5CE00; /* fallback */
+/*background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg'); */
+box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 15px;
+position: relative;
+overflow: hidden;
+
+}
+.above-content-2-heading  { /* -- title background --*/
+background-color: #F0E68C;
+padding: 10px 10px 10px 20px;
+margin: 0px	0px	10px 0px;
+height: 30px;
+border-radius: 15px 15px 0px 0px;
+}
+.above-content-2 .widget   { /* -- title background --*  broke the title text fromating
+background-color: gray; */
+padding: 0px 10px 0px 10px;
+margin: 0px	0px	10px 0px;
+
+}
+
+.above-content-3 { /* - background -*/
+width: 31%;
+float: left;
+padding: 0px 0px 0px 0px;
+margin: 20px 0px 0px 0px;
+height: 255px;
+border: solid;
+border-width: 0px;
+background-color: #FFFFF9; /* fallback #CBF2E2
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');*/
+box-shadow: 1px 1px 1px 0px #888888;
+	border-radius: 15px;
+position: relative;
+overflow: hidden;
+
+}
+.above-content-3-heading { /* 66CDAA-- title background --*/
+background-color: #F0F8FF;
+padding: 10px 10px 10px 20px;
+margin: 0px	0px	10px 0px;
+height: 30px;
+border-radius: 15px 15px 0px 0px;
+}
+ .above-content-3 .widget {/* -- title background --  broke the title text fromating
+background-color: #66CDAA;*/
+padding: 0px 0px 0px 30px;
+margin: 0px	0px	0px 0px;
+
+}
+
+
+
+/* --------------------------------------------  */
+
+
+
+
+/* =Event Calendar
+----------------------------------------------- */
+
+table.fullcalendar {
+    border-collapse: collapse;
+    margin-left: -90px;
+    max-width: 825px;
+}
+
+#ai1ec-container {
+padding: 20px;
+width: 95%;
+}
+
+
+/* =Twitter Page
+----------------------------------------------- */
+
+#half-box
+{ border:solid;
+}
+#half-box .entry-content {
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 0px;
+}
+.intent-meta a.favorite {
+padding-left: 15px;
+}
+.intent-meta a.retweet {
+padding-left: 15px;
+}
+
+.intent-meta a.reply {
+padding-left: 15px;
+}
+
+
+
+
+
+/* =Twitter widget
+----------------------------------------------- */
+
+
+.widget_twitter div {
+   padding-bottom: 5px; 
+padding-right: 5px;
+
+	
+}
+ 
+.widget_twitter ul li {
+    margin-bottom:15px;
+	border-radius: 15px;
+		background-color: #EDF3FF;
+	/* box-shadow: 1px 1px 1px 2px #888;  */
+	margin-left:-10px;
+	padding-left:5px;
+	padding-top:10px;
+}
+ 
+.widget_twitter .follow-button,
+.widget_twitter .xavisys-link {
+    margin:0 10px 10px 25px;
+	height:5px;
+
+}
+ 
+.widget_twitter .entry-meta {
+    display:block;
+    font-size:80%;
+}
+ 
+.widget_twitter .intent-meta a {
+   /** background: url('/images/everything-spritev2.png'); ** from Twitter ressources */
+    display: inliine;  /* changed from inline-block */
+    height: 20px;
+    text-indent: -9999px;
+    width: 20px;
+	margin-left: 5px;
+}
+.widget_twitter .intent-meta a.in-reply-to {
+ height:20px;
+width:20px;
+background:url('/images/everything-spritev2.png') -41px -9px no-repeat; /** from Twitter ressources */
+}
+.widget_twitter .intent-meta a:hover.in-reply-to {
+height:20px;
+width:20px;
+background:url('/images/everything-spritev2.png') -57px -11px no-repeat; /** from Twitter ressources */
+	}
+.widget_twitter .intent-meta a.favorite 
+height:20px;
+width:20px;
+    background-position: -32px center;
+ background: url('/images/everything-spritev2.png'); /** from Twitter ressources */
+margin-left:15px;	
+margin-top:15px}
+.widget_twitter .intent-meta a:hover.favorite {
+    height:25px;
+width:25px;
+background-position: -48px center;
+	 background: url('images/everything-spritev2.png'); /** from Twitter ressources */
+}
+.widget_twitter .intent-meta a.retweet {
+height:25px;
+width:25px;
+  /** background: url('images/everything-spritev2.png');from Twitter ressources */
+    background-position: -80px center;
+}
+.widget_twitter .intent-meta a:hover.retweet {
+ height:25px;
+width:25px;
+ background: url('images/everything-spritev2.png'); /** from Twitter ressources */
+    background-position: -96px center;
+}
+
+
+/* =Comments
+----------------------------------------------- 
+.comments , .comments-link a {
+
+}
+*/
+
+
+/* Post author highlighting 
+/* sidebar-page.php comments */
+/* Make sure we have room for our comment avatars */
+
+/* And a full-width comment form */
+
+
+/* Comment Form */
+
+
+
+
+/* =Footer
+----------------------------------------------- */
+
+/* Site Generator Line */
+
+/* =Responsive Structure
+----------------------------------------------- */
+
+
+
+/* Speciality Pages
+=================================================================== */
+
+
+/* = page template No sidebar 
+----------------------------------------------- */
+.no-sidebar {
+	width: 85%;
+	margin-bottom: 20px;
+    margin-left: 5.6%;
+   /* margin-right: 34% !important; */
+    margin-top: 140px;
+	padding-top: 40px;
+  	padding-left: 50px;
+	padding-right: 20px;
+	box-shadow: 2px 2px 2px 2px #888;
+	border-right-style: solid; 
+	border-right-color: gray; 
+	border-right-width: 2px; 
+	background-color: #FFFFF9;
+	border-radius: 15px;
+
+}
+
+
+/* =error404
+----------------------------------------------- */
+
+.error404 #main #searchform {
+	background: #1C0B82;
+	border: 1px solid #ddd;
+	border-width: 1px 1px;
+	margin: 0 0 1.625em 10%;
+	width: 50%;
+	overflow: hidden;
+	padding: 1.625em 0;
+	margin-left: 20%;
+
+}
+.error404 #main #s {
+	width: 60%;
+	padding-right: 10%;
+	padding-left: 10%;
+	margin-left: 10%;
+}
+
+
+
+/* =  Block page formats
+---------------------------------------------------------------------------------------- */
+
+
+
+
+
+#block-primary {
+ /* need background color to finish */
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: -26.4%;
+    margin-top: 0;
+    width: 100%;
+    z-index: 0;
+	background-color: white;
+	background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/bg-paper-gld-sq-lit-80.png'); /* Delete this line to Remove gold background image */
+
+	}
+	
+
+#block-content {
+
+margin-bottom: 0;
+margin-left: 5.6%;
+margin-right: 34%;
+margin-top: 0;
+width: 62%;
+padding-left: 20px;
+padding-right: 10px;
+box-shadow: 2px 2px 2px 2px #888;
+border-right-style: solid;
+border-right-color: gray;
+border-right-width: 2px;
+background-color: #FFFFF9;
+}
+
+
+#block-pg-main {
+position: relative;
+top: 30px;
+left: 0px;
+width: 100%; 
+height: 1000px;
+background: transparent;
+margin-bottom: 40px;
+padding: 0px;
+background-image: url ('../images/bg-paper-gld-sq-lit-80.png');
+
+}
+
+#block-pg-maina {
+width: 600px; 
+height: 100%;
+background: transparent;
+border: 0px solid #ddd;
+float: left;
+/* box-shadow: 1px 1px 1px 1px #888888;
+	border-radius: 15px; */
+
+
+}
+
+#block-pg-mainb {
+width: 350px; 
+height:100%;
+background: transparent;
+border: 0px solid #ddd;
+float: right;
+/*postion: relative;*/
+	
+}
+
+
+
+.block-pg-1a { 
+width: 93%;
+height: 400px;
+border: solid;
+border-width: 0px;
+float: left;
+background-color: #f4eae1;
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');
+
+box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 15px;
+padding: 40px 10px 20px 20px;
+margin: 15px 5px 10px 10px;
+overflow: hidden;
+}
+.block-pg-1a-text h1 { font-size: 32px; }
+.block-pg-1a-text {
+margin: 10px 1px 10px 10px;
+
+
+}
+
+.block-pg-1b {
+width: 93%;
+height: 400px;
+border: solid;
+border-width: 0px;
+float: left;
+background-color:#f4eae1;
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');
+
+box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 15px;
+padding: 40px 10px 20px 20px;
+margin: 15px 5px 10px 10px;
+overflow: hidden;
+}
+
+.block-pg-2a {
+width: auto;
+height: 305px;
+float: right;
+background-color:#f4eae1;
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');
+box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 10px;
+	margin: 10px 10px 5px 5px;
+}
+
+.block-pg-2a-img {
+	border-radius: 10px 10px 0 0;
+	background-color: #d89f45;
+	width: 100%;
+	height: 60px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+.block-pg-2a-text {
+	height: 180px;
+	float: right;
+	background-color:"";
+	margin: 20px 10px 5px 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.block-pg-2b {
+	width: auto;
+	height: 305px;
+	float: right;
+	background-color:#f4eae1;
+	background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');
+	box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 10px;
+	margin: 10px 10px 5px 5px;
+}
+
+.block-pg-2b-img {
+	border-radius: 10px 10px 0 0;
+	background-color: #d89f45;
+	width: 100%;
+	height: 60px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+.block-pg-2b-text {
+height: 180px;
+float: right;
+background-color:"";
+padding: 20px 10px 20px 20px;
+position: relative;
+}
+
+.block-pg-2c {
+	width: auto;
+	height: 305px;
+	float: right;
+	background-color:#f4eae1;
+	background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/paper-sunb.jpg');
+	box-shadow: 1px 2px 3px 1px #888888;
+	border-radius: 10px;
+	margin: 10px 10px 5px 5px;
+}
+
+.block-pg-2c-img {
+	border-radius: 10px 10px 0 0;
+	background-color: #d89f45;
+width: 100%;
+height: 60px;
+float: right;
+margin: 0;
+padding: 0;
+position: relative;
+
+}
+.block-pg-2c-text {
+height: 180px;
+float: right;
+background-color:"";
+padding: 20px 10px 20px 20px;
+position: relative;
+}
+
+.recent-posts {
+	width: 100%;
+	background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/images/bg-paper-gld-sq-lit-80.png');
+
+}
+.recent-posts-left {
+box-shadow: 2px 2px 3px 1px #888888;
+	border-radius: 10px;
+	width: 38%;
+	max-width: 450px;
+	height: auto;
+	margin: 20px 0 20px 20px;
+	padding-left:10px;
+	padding-right:10px;
+	position: absolute;
+	background: #f9f7b8
+	/*section.recent-posts div.recent-posts-left ol.other-recent-posts li.entry-title span.comments-link */
+}
+
+.recent-posts-right {
+box-shadow: 2px 2px 3px 1px #888888;
+	border-radius: 10px;
+	width: 45%;
+	height:100%;
+	margin: 20px 20px 20px 20px;
+	padding-left:10px;
+	padding-right:10px;
+	float:right;
+	background: #f9f7b8
+}
+
+
+
+/* =Showcase
+----------------------------------------------- */
+.one-column .page-template-showcase-php #main .widget-area {
+	float: none;
+	margin: 0;
+	width: auto;
+}
+
+
+.page-template-showcase-php #main .widget-area {
+	float: left;
+	margin: 0 -22.15% 0 0;
+	width: 22.15%;
+}
+
+/* END of Speciality Pages
+=================================================================== */
+
+/* =Print
+----------------------------------------------- */
+
+
+/* =IE7
+----------------------------------------------- */
+
+/*
+#sidebar-left widget.collapsible h3.widget-title {
+	background: url('http://ph1landrews.com/occupy/dev/wp/themes/occupation/images/widget-title-bg-open.png') top left no-repeat;
+	margin: 1em 2px .25em -6px;
+}
+#sidebar-left widget.collapsible h3.widget-title:hover,
+#sidebar-left widget.collapsible h3.widget-title.collapsed:hover {
+	background: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/widget-title-bg-hover.png') top left no-repeat;
+}
+#sidebar-left widget.collapsible h3.widget-title.collapsed {
+	background: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/widget-title-bg-closed.png') top left no-repeat;
+}
+
+#sidebar-right h3.widget.collapsible h3.widget-title {
+	background: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/sidebar-button-bg-1.png');
+	margin: 1em -14px .25em -12px;
+}
+#sidebar-right h3.widget.collapsible h3.widget-title:hover {
+	background: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/sidebar-button-bg-2.png');
+} 
+*/
+
+
+div.anythingSlider-cs-portfolio .anythingControls ul a, div.anythingSlider-cs-portfolio.activeSlider .anythingControls ul a {
+	background-color: white;
+}
+div.anythingSlider-cs-portfolio .anythingControls ul a:hover, div.anythingSlider-cs-portfolio .anythingControls ul a.cur,
+div.anythingSlider-cs-portfolio.activeSlider .anythingControls ul a:hover, div.anythingSlider-cs-portfolio.activeSlider .anythingControls ul a.cur {
+	background-color: white;
+}
+div.anythingSlider-cs-portfolio .start-stop, div.anythingSlider-cs-portfolio .start-stop.hover {
+	background-color: white;
+}
+div.anythingSlider-cs-portfolio .start-stop:hover {
+	background-color: white; 
+}
+div.anythingSlider-cs-portfolio .start-stop.playing {
+	background-color: white;
+}
+div.anythingSlider-cs-portfolio .start-stop.playing:hover {
+	background-color: white;
+}
+*/
+
+/* =Twitter widget
+----------------------------------------------- */
+/*
+#mysprite1{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -25px -9px no-repeat;
+}
+
+#mysprite2{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -41px -9px no-repeat;
+}
+
+#mysprite3{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -57px -11px no-repeat;
+}
+
+#mysprite4{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -74px -11px no-repeat;
+}
+
+#mysprite5{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -88px -10px no-repeat;
+}
+
+#mysprite6{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -104px -10px no-repeat;
+}
+
+#mysprite7{
+height:5px;
+width:5px;
+background:url('images/everything-spritev2.png') -122px -9px no-repeat;
+}
+
+
+
+*/

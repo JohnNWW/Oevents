@@ -1,0 +1,198 @@
+------
+end of DEC/JAN Updates
+
+Error page add
+Clean permalinks
+Run Search and Replace
+added sidebar to single post pages - changed template single.php and function
+
+
+
+=========================================
+Site Migration
+dump new database into site
+got to wp_options in mysql and change default url to new site url
+go to newsite.org/wp-admin log in and change dashboard>settings>general = newsite url
+
+Search and replace
+Log in widget
+announcements
+custom links > menu
+
+contact forms
+
+
+
+
+List of Plugin to deactivate before backup and migration of database
+Asmet
+Custom Contact Forms
+ALO-easymail - conflicts with mail function of event manager plugin ( for intermed web admins 
+a conflicting plugin called Ajax Event Calendar. http://www.eventualo.net/blog/easymail-newsletter-for-developers/
+
+Demo Data Creator
+counterize stat plugin - 
+Events Manager - disabled has booking but calendar function in all-in-one is better
+All-in-one Calendar
+Executable PHP widget
+GRAND Flash Album Gallery
+Hackadelic WidgetVoodoo
+Registration Form Widget
+Shadowbox JS
+Shadowbox JS - Use Title from Image
+ShareThis
+Smooth Slider - replaced w anything slider - much nicer and flexible slider
+Twitter widget pro
+Search and Replace
+Anything slider
+WordPress Importer
+Wassup
+flexi page
+-----------------------------------------
+Reactivate after migration
+----------------------------------------------------
+Widgets needing editing
+--------------------------------------------------------
+add changes to login widget
+
+to fix widget voodoo sidebar widget collapse - settings>voodoo 
+1 change title selector to .widget-title
+2.change Auto-collapsed Widgets Selector  = Auto-collapsed Widgets Selecton
+
+Search and replace on styles.css files
+-------------------------------------------------------------------
+Server Files Structure Name Conventions
+
+Data Bases 
+mysql	ourdomain.org/StCity  ie wachelan, wiriverwest providing a state > city order sort
+
+wordpress root ourdomain/occupylive/state/theirdomaincity/wp
+
+wordpress database wp-StCity  wp-wiriverwest providing a state > city order sort
+
+
+
+
+
+-------------------------------------------------------------------------------------
+when posting a picture, use this instead of http://expample.com/**
+
+wp-content/uploads/**
+example: wp-content/uploads/2011/12/640_westcoastportblockade_wallstreet.jpg
+-------------------------------------------------------------------------------------
+login wiget is missin
+------------------------------------------------
+
+check demo1 post for pic.. Reinsert
+---------------------------------------------------
+Change dashboard>settings>privicy to allow search engines
+
+---------------------------------------------------
+Search and replace http://ph1landrews.com/occupy/dev/wp/ with new user domain path in style.css, and widget code.
+replace admin@ph1landrews.com with user@theiremail.com Error occurs in the form email.
+
+--------------------------------------------------
+
+Check SHARE THIS PLUGIN SETTINGS FOR PUBLISHER KEY??? IS SHARE THIS
+GOING TO THE RIGHT PLACE FOR THE NEW SITE OWNERS I think they need to 
+register it so their user counts show up -- NEEDS WORK TO CHECK
+
+---------------------------------
+use wp-admin login
+-----------------------------------
+change links in the config file with the bottom two lines. Add these two lines at bottom of config.php file. Change "www.example.com to your domain name
+
+define('WP_SITEURL', 'http://www.example.com');
+define('WP_HOME', 'http://www.example.com');
+
+If you want to change from .com to .org, you need to go into config.php and change Url's at bottom of page
+-----------------------------------------------------
+
+
+
+Remove search and replace plugin when done with site installation
+
+
+
+
+
+==============================================================
+===============================================================
+
+USER Reminders
+
+Backup Site - Then Update Plugins and WP
+------------------------------------------------------
+email addresses are available using your domain name ie; "user@mydomain.org"
+
+-------------------------------------------------------
+
+If you use a long title for a post, page, event etc.. 
+remember to enter a short slug title (best - 3 ot 4 words max) on the edit page-> this will
+be the url that your browsers and search engines use.
+
+------------------------------------------------------
+
+IMPORTANT: WassUp statistic plugin is incompatible with page-based caching plugins such as "WP Super-Cache".
+
+
+------------------------------------------------------
+
+If you want to change the color of your site background and image with more options than the dashboard find the following at the top of the page change the following code: in style.css
+
+body {   
+background-color: #000;  /* change color background of site to darkblue for yellow image #070350 */
+/* Delete background-image line to Remove gold background image  for yellow image change to replace red with yel */
+background-image: url('http://ph1landrews.com/occupy/dev/wp/wp-content/themes/occupation/images/bkg-star-red-2.jpg'); /* Delete this line to Remove gold background image */
+background-repeat: no-repeat;
+background-position: top center;
+background-attachment: scroll;
+	line-height: 1.2;
+	font-family: “Trebuchet MS”, Verdana, Tahoma, Geneva, “Lucida Sans Unicode”, “Lucida Grande”, Arial, Helvetica, “MS Sans Serif”, sans-serif; /*NWW edit none */
+	font-size: 14px; /*NWW edit none */
+}
+
+
+If you want to change the color of your site name at the top of the page change the following code: in style.css
+
+#site-title a {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: white;  // CHANGE TO blue, green, lightgreen .... etc or use colorpicker and #000000
+    font-size: 46px;
+    font-weight: bold;
+	text-align: center;
+    line-height: 48px;	
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+}
+--------------------------------------------------------------------------------------------------------------
+	Run Search and Replace to fix links on pages. ie: Events on sidebar may point back to basic1 page.
+-----------------------------------------------------------------------------------------------------------
+Fixed error message when going to http://occupy.ph1landrews.com/dev/wp
+Go to settings and set the two Urls to proper path, go to database/options and make sure site url is the same.
+Make sure home button points to proper url in menu
+----------------------------------------------------------------------------------------------------------------
+Twitter Widget Pro 
+page code
+[twitter-widget username="TWITTERNAME" before_widget="<div class='half-box'>" after_widget="</div>" before_title="<h1>" after_title="</h1>" errmsg="Uh oh!" hiderss="true" hidereplies="true" targetBlank="true" avatar="1" showXavisysLink="1" items="4" showts="60" title="TITLE"]
+Change TWITTERNAME to the twitter account and TITLE to the title name
+
+Activate twitter widget pro, fill out twitter name, adjust items if desired. Give feed a title.
+Add widget to sidebar under main sidebar.
+--------------------------------------------------------------------------------
+Activate Twitter Feed widget, add page to menu,,,,,??? Not finished
+-----------------------------------------------------------------------------------
+All Slider setting are lost if plugin is deactivated .. here are the setting required to fit the page ???? need finishing
+----------------------------------------------------------------------------------------------------------------------------
+Site updating
+
+Wordpress and the widgets will need updating on a regular basis.  We STRONGLY recommend updating within a week
+or so of the offical release of new versions. Best practice is too wait several days, check plugin / wordpress's
+site or forum to see if there were any significant problems with updates conflicting with existing installations
+( uncommon on minor version updates ) then backing up your content. We have provided a feature in the 
+WordPress Admin Dashboard for Backing up your content. Under Tools>export then updating the component as indicated.
+
+---------------------------------------------------------------------------------------
+
